@@ -62,6 +62,12 @@ _DATASETS = {
         _RAW_DIR:
             _DATA_DIR + '/cityscapes/raw'
     },
+    'neuron_2019_train': {
+        _IM_DIR:
+            _DATA_DIR + '/neuron/neuron_2019_train',
+        _ANN_FN:
+            _DATA_DIR + '/neuron/annotations/neuron_2019_train.json'
+    },
     'coco_2014_train': {
         _IM_DIR:
             _DATA_DIR + '/coco/coco_train2014',
