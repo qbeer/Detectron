@@ -236,7 +236,7 @@ __C.TEST.MAX_SIZE = 1000
 
 # Overlap threshold used for non-maximum suppression (suppress boxes with
 # IoU >= this threshold)
-__C.TEST.NMS = 0.3
+__C.TEST.NMS = 0.01
 
 # Apply Fast R-CNN style bounding-box regression if True
 __C.TEST.BBOX_REG = True
@@ -525,11 +525,11 @@ __C.RETINANET.PRE_NMS_TOP_N = 1000
 
 # IoU overlap ratio for labeling an anchor as positive
 # Anchors with >= iou overlap are labeled positive
-__C.RETINANET.POSITIVE_OVERLAP = 0.5
+__C.RETINANET.POSITIVE_OVERLAP = 0.65
 
 # IoU overlap ratio for labeling an anchor as negative
 # Anchors with < iou overlap are labeled negative
-__C.RETINANET.NEGATIVE_OVERLAP = 0.4
+__C.RETINANET.NEGATIVE_OVERLAP = 0.55
 
 # Focal loss parameter: alpha
 __C.RETINANET.LOSS_ALPHA = 0.25
