@@ -32,7 +32,7 @@ TEST:
   DATASETS: ('neuron_2019_train',)
   SCALE: 500
   MAX_SIZE: 500
-  NMS: 0.05
+  NMS: 0.2
   RPN_PRE_NMS_TOP_N: 1000  # Per FPN level
   RPN_POST_NMS_TOP_N: 1000
 OUTPUT_DIR: .
