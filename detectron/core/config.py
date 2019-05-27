@@ -236,7 +236,7 @@ __C.TEST.MAX_SIZE = 1000
 
 # Overlap threshold used for non-maximum suppression (suppress boxes with
 # IoU >= this threshold)
-__C.TEST.NMS = 0.01
+__C.TEST.NMS = 0.85
 
 # Apply Fast R-CNN style bounding-box regression if True
 __C.TEST.BBOX_REG = True
@@ -251,7 +251,7 @@ __C.TEST.GENERATE_PROPOSALS_ON_GPU = False
 __C.TEST.PROPOSAL_LIMIT = 2000
 
 # NMS threshold used on RPN proposals
-__C.TEST.RPN_NMS_THRESH = 0.7
+__C.TEST.RPN_NMS_THRESH = 0.85
 
 # Number of top scoring RPN proposals to keep before applying NMS
 # When FPN is used, this is *per FPN level* (not total)
@@ -273,7 +273,7 @@ __C.TEST.DETECTIONS_PER_IM = 100
 # Minimum score threshold (assuming scores in a [0, 1] range); a value chosen to
 # balance obtaining high recall with not having too many low precision
 # detections that will slow down inference post processing steps (like NMS)
-__C.TEST.SCORE_THRESH = 0.05
+__C.TEST.SCORE_THRESH = 0.3
 
 # Save detection results files if True
 # If false, results files are cleaned up (they can be large) after local
@@ -525,11 +525,11 @@ __C.RETINANET.PRE_NMS_TOP_N = 1000
 
 # IoU overlap ratio for labeling an anchor as positive
 # Anchors with >= iou overlap are labeled positive
-__C.RETINANET.POSITIVE_OVERLAP = 0.65
+__C.RETINANET.POSITIVE_OVERLAP = 0.5
 
 # IoU overlap ratio for labeling an anchor as negative
 # Anchors with < iou overlap are labeled negative
-__C.RETINANET.NEGATIVE_OVERLAP = 0.55
+__C.RETINANET.NEGATIVE_OVERLAP = 0.4
 
 # Focal loss parameter: alpha
 __C.RETINANET.LOSS_ALPHA = 0.25
