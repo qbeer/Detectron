@@ -8,7 +8,7 @@ SOLVER:
   LR_POLICY: steps_with_decay
   BASE_LR: 0.01
   GAMMA: 0.1
-  MAX_ITER: 900
+  MAX_ITER: 1000
   STEPS: [0, 600, 800]
 FPN:
   FPN_ON: True
@@ -33,13 +33,13 @@ RETINANET:
 TRAIN:
   WEIGHTS: https://dl.fbaipublicfiles.com/detectron/ImageNetPretrained/20171220/X-101-32x8d.pkl
   DATASETS: ('neuron_2019_train',)
-  SCALES: (800,)
-  MAX_SIZE: 1333
+  SCALES: (500,)
+  MAX_SIZE: 500
   RPN_STRADDLE_THRESH: -1  # default 0
 TEST:
   FORCE_JSON_DATASET_EVAL: True
   DATASETS: ('neuron_2019_train',)
-  SCALE: 800
+  SCALE: 500
   MAX_SIZE: 500
   NMS: 0.05
   RPN_PRE_NMS_TOP_N: 10000  # Per FPN level
